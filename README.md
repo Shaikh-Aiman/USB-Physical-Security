@@ -21,7 +21,7 @@ The application allows administrators to:
 ### Project Structure:
 - __Main Application:__ A Tkinter-based GUI for managing USB storage devices.
 - __Core Features:__ Includes functionality to enable/disable USB ports, format pendrives, and display project details.
-- __Images and Resources:__ All necessary image files and a demo HTML file are included for UI enhancements.
+- __Images and Resources:__ All necessary image files and a HTML file are included for UI enhancements.
 - __Executable:__ The project is compiled into an executable file for easy distribution and use.
 
 ### Collaboration:
@@ -79,7 +79,7 @@ python main.py
 - __Format Pendrive:__ Formats the detected pendrive (requires admin rights).
 - __Help:__ Opens a popup with a description of all buttons.
 - __About Us:__ Displays project details and team members.
-- __Project Details:__ Opens a demo HTML file with additional information.
+- __Project Details:__ Opens a HTML file with additional information.
 
 ### Conclusion:
 The USB Physical Device Manager is a reliable, efficient, and secure application for managing USB storage access. Developed with a focus on security and usability, this tool is ideal for environments that require strict control over data transfers. The inclusion of a passkey-protected interface ensures that only authorized personnel can manage USB access, making it an essential tool for organizations concerned about data security.
