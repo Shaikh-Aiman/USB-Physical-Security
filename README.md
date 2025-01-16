@@ -1,4 +1,4 @@
-# USB_Physical_Security
+# USB Physical Security
 The USB Physical Device Manager is a comprehensive application developed during my internship at Supraja Technologies. Its primary objective is to dynamically manage USB storage devices to enhance security and prevent unauthorized data transfers or potential malware threats.
 ### Project Objectives:
 <ins>The application allows administrators to:</ins>
