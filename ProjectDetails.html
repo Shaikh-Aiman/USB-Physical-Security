@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USB Physical Device</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background-color: #f0f0f0;
+        }
+
+        /* Blue Bar */
+        .blue-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #1e3d58;
+            z-index: 11; /* Ensure it stays above other content */
+        }
+
+        /* Title Heading */
+        .page-title {
+            position: fixed;
+            top: 20px; /* Adjusted to leave space for the blue bar */
+            left: 0;
+            width: 100%;
+            background-color: white;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0;
+            border-bottom: 2px solid #1e3d58;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            z-index: 10; /* Ensure it's on the top layer */
+            animation: title-fade-in 1s 5s forwards;
+        }
+
+        @keyframes title-fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Logo and Details Section */
+        .logo-section {
+            height: 100vh;
+            background-color: #1e3d58;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-wrapper {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            position: absolute;
+            width: 120px; /* Reduced size */
+            height: 120px; /* Reduced size */
+            background-color: #fff;
+            border-radius: 50%;
+            background-image: url(https://media-exp1.licdn.com/dms/image/C560BAQF3H-o_kgtM7g/company-logo_200_200/0/1617643689348?e=2159024400&v=beta&t=Z74oD3gvFuUf98Bi2df7TpGSwCtBP3EK3Kmv4dYv-Bs);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: logo-circle 4s forwards, fade-out 4s forwards;
+        }
+
+        @keyframes logo-circle {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.2);
+            }
+            100% {
+                transform: scale(0);
+            }
+        }
+
+        @keyframes fade-out {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        /* Developer Details */
+        .developer-details {
+            position: absolute;
+            opacity: 0;
+            text-align: center;
+            color: #fff;
+            animation: details-fade-in 1s 4s forwards; 
+            /* Delays fade-in until the logo fades out */
+   }
+
+        @keyframes details-fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .developer-details h2 {
+            font-size: 1.7rem;
+            margin-bottom: 20px;
+        }
+
+        .developer-details .detail {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .developer-details .detail img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+
+        .developer-details p {
+            margin: 4;
+        }
+
+        .developer-details .separator {
+            height: 1px;
+            background-color: #fff;
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        /* Second Page */
+        /* Company Logo in Rectangular Shape */
+   .company-logo {
+    width: 100%;  /* Full width */
+    height: 200px;  /* Increased height */
+    background-image: url(https://media-exp1.licdn.com/dms/image/C560BAQF3H-o_kgtM7g/company-logo_200_200/0/1617643689348?e=2159024400&v=beta&t=Z74oD3gvFuUf98Bi2df7TpGSwCtBP3EK3Kmv4dYv-Bs);
+    background-size: contain; /* Ensures the logo scales appropriately */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0; /* Removed all margins */
+    box-shadow: none; /* No shadow */
+    border: none; /* No borders */
+    background-color: white; /* White background for the logo section */
+}
+
+/* Content Section Adjustments */
+.content-section {
+    width: 100%;
+    background-color: white; /* Ensures the background is white */
+    padding: 20px;
+    text-align: center;
+    margin-top: -40px; /* Moves the content section up */
+}
+
+        /* Project Overview Section */
+        .project-overview {
+            margin-top: 20px;
+        }
+
+        .project-overview h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .project-overview table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .project-overview table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        .project-overview th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .project-overview th {
+            background-color: #f0f0f0; /* Light grey background for headings */
+        }
+
+        /* Company Details Section */
+        .company-details {
+            margin-top: 50px;
+        }
+
+        .company-details h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .company-details table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .company-details table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        .company-details th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        .company-details th {
+            background-color: #f0f0f0; /* Light grey background for headings */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- First Page (unchanged) -->
+
+    <!-- Blue Bar -->
+    <div class="blue-bar"></div>
+
+    <!-- Title -->
+    <div class="page-title">USB Physical Security</div>
+
+    <!-- Logo Split Section -->
+    <section class="logo-section">
+        <div class="logo-wrapper">
+            <!-- Logo -->
+            <div class="logo"></div>
+
+            <!-- Developer Details -->
+<div class="developer-details">
+    <h2>Developer Details</h2>
+    <div class="detail">
+        <img src="https://i.pinimg.com/736x/52/35/50/523550ccbeb05f46dd032a5ac45c3b5d.jpg" alt="Shaikh Aiman">
+        <div>
+    <p>Name: Shaikh Aiman                     </p>
+        <p>Employee ID: 23E06ST#IS#7003             </p>
+    <p>Email:shaikh.aiman2712@gmail.com                    </p>
+            <p>Role: Cybersecurity Intern</p>
+        </div>
+    </div>
+    <div class="separator"></div>
+    <div class="detail">
+        
+        <img src="https://i.pinimg.com/736x/1e/e6/54/1ee654f04d664cf6d985c4fd8996a38e.jpg" alt="N.Sri Laxmi Bhargavi">
+        <div>
+           <p>Name: N. Sri Laxmi Bhargavi</p>
+        <p>Employee ID: 23E06ST#IS#7002             </p>
+    <p>Email:bhargaviningapola@gmail.com                    </p>
+            <p>Role: Cybersecurity Intern</p>
+        </div>
+    </div>
+</div>
+
+    </section>
+
+    <!-- Second Page (New Content) -->
+
+    <!-- Company Logo Section -->
+    <div class="company-logo">
+        <a href="https://www.suprajatechnologies.com" target="_blank">
+    <div class="company-logo"></div>
+</a></div>
+    <section class="content-section">
+        <!-- Project Overview Section -->
+        <div class="project-overview">
+            <h2>Project Overview</h2>
+            <table>
+                <tr>
+                    <th>Project Details</th>
+                    <th>Value</th>
+                </tr>
+                <tr>
+                    <td>Project Name</td>
+                    <td>USB Physical Security</td>
+                </tr>
+                <tr>
+                    <td>Project Description</td>
+                    <td>Implementing Physical Security Policy on USB in Organization for Physical Security</td>
+                </tr>
+                <tr>
+                    <td>Project Start Date</td>
+                    <td>16/11/2024</td>
+                </tr>
+                <tr>
+                    <td>Project End Date</td>
+                    <td>15/12/2024</td>
+                </tr>
+                <tr>
+                    <td>Project Status</td>
+                    <td>Completed</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Company Details Section -->
+        <div class="company-details">
+            <h2>Company Details</h2>
+            <table>
+                <tr>
+                    <th>Detail</th>
+                    <th>Information</th>
+                </tr>
+                <tr>
+                    <td>Company Name</td>
+                    <td>Supraja Technologies</td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>Hyderabad, India</td>
+                </tr>
+               
+                <tr>
+                    <td>Contact</td>
+                    <td>contact@suprajatechnologies.com</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+</body>
+</html>
