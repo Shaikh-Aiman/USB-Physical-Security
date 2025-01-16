@@ -43,7 +43,7 @@ python main.py
 ### Working:
 - __Launch the Application:__
   - The application is launched by executing the .exe file or running the main.py script if the Python environment is set up.
-    - A user-friendly graphical interface, developed using the Tkinter library, is displayed.
+  - A user-friendly graphical interface, developed using the Tkinter library, is displayed.
 - __Authentication:__
   - The application includes a passkey verification system to ensure that only authorized users can access and manage USB device settings.
   - Upon entering the correct passkey, users can access the application’s features.
