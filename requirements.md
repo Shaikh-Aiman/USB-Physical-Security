@@ -1,4 +1,9 @@
 # Prerequisites
+
+![usbdropattack1](https://github.com/user-attachments/assets/b36c23b4-54dc-4a4d-9ebe-aee0ff86399e)
+<br>
+
+---
 __Ensure you have the following Python packages installed:__ <br>
 
 - __os:__ Used to manage file system operations such as detecting USB devices, checking file paths, and handling system configurations related to USB storage.
