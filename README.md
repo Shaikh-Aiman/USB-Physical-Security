@@ -5,8 +5,10 @@ The USB Physical Device Manager is a comprehensive application developed during 
 
 <div align="center">
     <img src="https://github.com/user-attachments/assets/3bfcb030-3689-447b-8f94-54a0919f3571" alt="Animated GIF">
-    <hr style="border: none; height: 2px; background: linear-gradient(to right, #ff7e5f, #feb47b); margin: 20px 0;">
+    <br>
+    <img src="[path-to-your-gradient-line.png](https://img.lovepik.com/png/20231014/Horizontal-and-vertical-transparent-gradients-vertical-linear-color-gradient-gradient_206652_wh1200.png)" alt="Gradient Line" style="width: 100%; max-width: 600px; height: 2px;">
 </div>
+
 
 
 
