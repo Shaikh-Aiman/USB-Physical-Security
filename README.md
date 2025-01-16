@@ -1,7 +1,7 @@
 # USB Physical Security
 The USB Physical Device Manager is a comprehensive application developed during my internship at Supraja Technologies. Its primary objective is to dynamically manage USB storage devices to enhance security and prevent unauthorized data transfers or potential malware threats.
 ### Project Objectives:
-<ins>The application allows administrators to:</ins>
+The application allows administrators to:
 - Enable and disable USB storage dynamically for security purposes.
 - Format connected USB drives.
 - Ensure data security with passkey verification and USB state management (Enable State, Disable State, Format Pendrive).
@@ -42,24 +42,24 @@ python main.py
 
 ### Working:
 - __Launch the Application:__
-         - The application is launched by executing the .exe file or running the main.py script if the Python environment is set up.
-         - A user-friendly graphical interface, developed using the Tkinter library, is displayed.
+  - The application is launched by executing the .exe file or running the main.py script if the Python environment is set up.
+    - A user-friendly graphical interface, developed using the Tkinter library, is displayed.
 - __Authentication:__
-         - The application includes a passkey verification system to ensure that only authorized users can access and manage USB device settings.
-         - Upon entering the correct passkey, users can access the application’s features.
+  - The application includes a passkey verification system to ensure that only authorized users can access and manage USB device settings.
+  - Upon entering the correct passkey, users can access the application’s features.
 - __Enable or Disable USB Access:__
-         - The "Enable USB" button allows the user to restore functionality to USB storage devices.
-         - Clicking the button runs backend logic to re-enable USB ports, ensuring they can read/write data.
-         - The "Disable USB" button restricts access to USB storage devices.
-         - Clicking this button prevents USB ports from reading or writing data, ensuring enhanced security against unauthorized transfers.
+  - The "Enable USB" button allows the user to restore functionality to USB storage devices.
+  - Clicking the button runs backend logic to re-enable USB ports, ensuring they can read/write data.
+  - The "Disable USB" button restricts access to USB storage devices.
+  - Clicking this button prevents USB ports from reading or writing data, ensuring enhanced security against unauthorized transfers.
 - __Format USB Drives:__
-         - The application includes functionality to format connected USB drives.
-         - Users can select the desired USB drive from a list and initiate formatting, removing all data and preparing it for reuse.
+  - The application includes functionality to format connected USB drives.
+  - Users can select the desired USB drive from a list and initiate formatting, removing all data and preparing it for reuse.
 - __Help and Documentation:__
-         - The application has a help feature, providing a guide on how to use the software.
-         - A "Project Details" button opens the ProjectDetails.html file, containing comprehensive documentation about the application, including its features and usage.
+  - The application has a help feature, providing a guide on how to use the software.
+  - A "Project Details" button opens the ProjectDetails.html file, containing comprehensive documentation about the application, including its features and usage.
 - __Additional Features:__
-         - __"About Us" Section:__ Displays project and developer details, including the application's purpose, contributors, and contact information.
+  - __"About Us" Section:__ Displays project and developer details, including the application's purpose, contributors, and contact information.
 - __Executable File for Ease of Use:__ The .exe file allows users to operate the application without installing Python or its dependencies, making it convenient for administrators to use the tool on any Windows system.
 
 ### Usage of All Buttons:
