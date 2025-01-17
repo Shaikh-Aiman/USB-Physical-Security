@@ -43,7 +43,7 @@ This project was completed with collaboration between two team members. I handle
 To run this project locally, follow these steps:
 
 - __Clone the repository:__ <br>
- git clone https://github.com/Shaikh-Aiman/USB-Physical-Security.git
+              git clone https://github.com/Shaikh-Aiman/USB-Physical-Security.git
 
 
 - __Navigate to the project directory:__
