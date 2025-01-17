@@ -15,3 +15,14 @@ __Ensure you have the following Python packages installed:__ <br>
 - __webbrowser:__ Opens web pages to provide links to user documentation or relevant project information from within the GUI interface, allowing administrators to access detailed resources quickly.
 - __tkinter.simpledialog:__ Used to handle sensitive user input like passkeys required for certain actions (e.g., disabling/enabling USB devices), ensuring secure access to features.
 - __sys:__ Helps manage platform-specific operations, ensuring the application works seamlessly on different Windows environments by handling USB device operations.
+- __PyInstaller:__ Converts the Python script into an executable file (.exe) for easy deployment and usage without requiring a Python installation.
+
+
+__<ins> NOTE: </ins>__ <br>
+
+              python -m PyInstaller --onefile --noconsole --icon="icon image in .ico format" --add-data "logo.jpg;." --add-data "bot.jpg;." --add-data "wa.jpeg;." --add-data "ques.png;." --add-data "ena.jpg;." --add-data "disa.jpg;." --add-data "demo.html;." <filename>.py
+
+---
+
+- Here --add-data is used to include additional non-Python files (like images, HTML files, configuration files, etc.) in the executable. This ensures that these files are bundled with the application and can be accessed during runtime without the need of images in the other system where .exe file is added.
+- This ensures that all necessary resources are bundled together, preventing path errors and allowing the application to run smoothly in any system.
