@@ -1,4 +1,4 @@
-# Screenshots of the User Interface
+# Screenshots of the User Interface:
 - The .exe file is created using Pyinstaller, which is used to execute the code directly by running the Application.
 
     ![Image](https://github.com/user-attachments/assets/6619f506-15fd-4b17-aa58-03c2329fccff)
@@ -34,3 +34,23 @@
 - The Result of Using the Format button is that when the formatting is successful whatever the contents present in the folder gets deleted and the folder becomes empty.
 
     ![Image](https://github.com/user-attachments/assets/a9d47dcf-b804-4cda-9452-14c484eb52e5)
+
+
+---
+
+# Design and Workflow Diagrams:
+
+- The FLOWCHART of how the application works
+
+    ![Image](https://github.com/user-attachments/assets/4203b685-0d63-4543-abcf-b6ad413c2b3b)
+
+
+- The UML DIAGRAM of the Project
+
+    ![Image](https://github.com/user-attachments/assets/4789b900-4c40-498a-b9f9-5c10a5aefa08)
+
+- The SEQUENCE DIAGRAM of the Project
+
+    ![Image](https://github.com/user-attachments/assets/c7549d52-5299-4d8a-a4c4-829ae949b09a)
+  
+  
