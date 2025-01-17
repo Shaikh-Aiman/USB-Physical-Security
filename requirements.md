@@ -20,7 +20,7 @@ __Ensure you have the following Python packages installed:__ <br>
 
 __<ins> NOTE: </ins>__ <br>
 
-              python -m PyInstaller --onefile --noconsole --icon="icon image in .ico format" --add-data "logo.jpg;." --add-data "bot.jpg;." --add-data "wa.jpeg;." --add-data "ques.png;." --add-data "ena.jpg;." --add-data "disa.jpg;." --add-data "demo.html;." <filename>.py
+              python -m PyInstaller --onefile --noconsole --icon="icon image in .ico format" --add-data "logo.jpg;." --add-data "bot.jpg;." --add-data "wa.jpeg;." --add-data "ques.png;." --add-data "ena.jpg;." --add-data "disa.jpg;." --add-data "html file which is attached;." <filename>.py
 
 ---
 
