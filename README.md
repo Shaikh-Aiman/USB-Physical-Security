@@ -42,8 +42,10 @@ This project was completed with collaboration between two team members. I handle
 ### Installation:
 To run this project locally, follow these steps:
 
-- __Clone the repository:__
+- __Clone the repository:__ <br>
  git clone https://github.com/Shaikh-Aiman/USB-Physical-Security.git
+
+
 - __Navigate to the project directory:__
 cd USB-Physical-Security
 - __Ensure you have Python installed on your system.__
