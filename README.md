@@ -36,6 +36,7 @@ This project was completed with collaboration between two team members. I handle
 - __ena.jpg:__ The image used for the "Enable USB" button.
 - __disa.jpg:__ The image used for the "Disable USB" button.
 - __ProjectDetails.html:__ An HTML file containing the project details, which can be opened from the "Project Details" button.
+- __logo1.ico:__ It is the image which is added as a logo for the .exe file.
 - __.exe file:__ The compiled executable file of the application for direct use without requiring Python installation.
 
 ### Installation:
